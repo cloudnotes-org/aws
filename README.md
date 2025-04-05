@@ -1,2 +1,2 @@
 # aws
-aws modules to share
+You are welcome to freely download and use any of the modules provided in this repository. These modules are open-source and designed to help streamline your infrastructure automation. Whether you're working on a personal project or a professional deployment, feel free to explore, customize, and integrate them into your workflow.
