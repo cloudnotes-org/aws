@@ -3,25 +3,26 @@
 This module provisions an Amazon Linux EC2 instance in a specified VPC subnet with a security group allowing configurable ingress rules and all outbound traffic. It also installs a simple Apache web server via user data.
 
 # Data Sources
-aws_ami.latest_amazon_linux
+
+    aws_ami.latest_amazon_linux
 
 Fetches the latest Amazon Linux 2 AMI from AWS.
 
-data "aws_ami" "latest_amazon_linux" {
-  most_recent = true
+    data "aws_ami" "latest_amazon_linux" {
+    most_recent = true
 
-  filter {
-    name   = "name"
-    values = ["amzn2-ami-hvm-*"]
-  }
+    filter {
+        name   = "name"
+        values = ["amzn2-ami-hvm-*"]
+    }
 
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
+    filter {
+        name   = "virtualization-type"
+        values = ["hvm"]
+    }
 
-  owners = ["amazon"]
-}
+    owners = ["amazon"]
+    }
 
 
 # Security Group
